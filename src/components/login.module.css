@@ -1,0 +1,30 @@
+form{
+
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    gap: 10px;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+
+form>input{
+    height: 40px;
+    outline: none;
+}
+
+form>button{
+    height: 35px;
+    width: 80px;
+}
+
+.register{
+    /* color: red; */
+    height: 35px;
+    width: 80px;
+    margin-left: 120px;
+    display: inline-block;
+    position: absolute;
+    margin-top: -45px;
+}

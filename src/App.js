@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Login from './components/Login';
+import {Routes,Route} from 'react-router-dom';
+import SignUp from './components/SignUp';
+import FeedPage from './components/FeedPage';
+import CreatePost from './components/CreatePost';
+import ViewPost from './components/ViewPost';
+import UpdatePost from './components/UpdateForm';
+import Admin from './components/Admin';
+import OtherUserPosts from './components/OtherUser';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <h1>J-Force</h1> */}
+      {/* <Login /> */}
+{/* <FeedPage /> */}
+      <Routes>
+        {/* <Route path="/" element={<SignUp />} />    */}
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<SignUp />} />
+        <Route path="/feed" element={<FeedPage />} />
+        <Route path="/createpost" element={<CreatePost />} />
+        <Route path="/posts" element={<ViewPost />} />
+        <Route path='/updatepost' element={<UpdatePost />} />
+        <Route path='/otheruserposts' element={<OtherUserPosts/>} />
+        <Route path = "/admin" element = {<Admin/>} />
+        
+    </Routes>
+
     </div>
   );
 }

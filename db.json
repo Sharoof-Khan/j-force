@@ -1,0 +1,136 @@
+{
+  "posts": [
+    {
+      "title": "Java Developer",
+      "description": "we are loking for java developer minimum of 2 yr experience ",
+      "date": "Tue Aug 02 2022 15:19:38 GMT+0530 (India Standard Time)",
+      "id": 2,
+      "approved": true
+    },
+    {
+      "title": "Express js",
+      "description": "Need 4 develoer for express js",
+      "date": "Tue Aug 02 2022 16:44:59 GMT+0530 (India Standard Time)",
+      "id": 4,
+      "author": "cooldev07",
+      "approved": true
+    },
+    {
+      "title": "J-force",
+      "description": "require 2 java developer 3 react developer and 2 php developer",
+      "date": "Tue Aug 02 2022 15:39:16 GMT+0530 (India Standard Time)",
+      "author": "srk10",
+      "id": 5,
+      "approved": true
+    },
+    {
+      "title": "Full Stack Developer",
+      "description": "Need 4 MERN stack developer ",
+      "date": "Tue Aug 02 2022 16:47:45 GMT+0530 (India Standard Time)",
+      "author": "cooldev07",
+      "id": 6,
+      "approved": true
+    },
+    {
+      "title": "PHP",
+      "description": "need 4 php developer",
+      "date": "Tue Aug 02 2022 16:48:48 GMT+0530 (India Standard Time)",
+      "author": "cooldev07",
+      "id": 7,
+      "approved": true
+    },
+    {
+      "title": "Redux develoer",
+      "description": "Need 2 experienced redux developer for our team",
+      "date": "Tue Aug 02 2022 17:19:06 GMT+0530 (India Standard Time)",
+      "author": "cooldev07",
+      "id": 8,
+      "approved": true
+    },
+    {
+      "title": "SEO",
+      "description": "need 5 seo developer for our team ",
+      "date": "Tue Aug 02 2022 17:21:24 GMT+0530 (India Standard Time)",
+      "author": "Ankit",
+      "id": 9,
+      "approved": true
+    },
+    {
+      "title": "Database manager",
+      "description": "Need 2 database manger for  j- force",
+      "date": "Tue Aug 02 2022 17:22:27 GMT+0530 (India Standard Time)",
+      "author": "Ankit",
+      "id": 10,
+      "approved": true
+    },
+    {
+      "title": "React fresher",
+      "description": "we need 2 react js developer",
+      "date": "Tue Aug 02 2022 18:29:39 GMT+0530 (India Standard Time)",
+      "author": null,
+      "id": 11,
+      "approved": true
+    },
+    {
+      "title": "Core Java",
+      "description": "Need 1 candidate for core java 1yr + experience ",
+      "date": "Tue Aug 02 2022 18:50:12 GMT+0530 (India Standard Time)",
+      "author": "Ankit",
+      "approved": true,
+      "id": 12
+    },
+    {
+      "title": "Dot Net",
+      "description": "need 6 dot net developer for j-force",
+      "date": "Tue Aug 02 2022 19:07:21 GMT+0530 (India Standard Time)",
+      "author": "Ankit",
+      "approved": false,
+      "id": 13
+    }
+  ],
+  "user": [
+    {
+      "username": "Ankit",
+      "password": "123456789",
+      "email": "gankit07@gmail.com",
+      "phone": "8898620309",
+      "role": "java",
+      "id": 1,
+      "approved": true
+    },
+    {
+      "username": "srk10",
+      "password": "147852369",
+      "email": "srk10@gmail.com",
+      "phone": "8898620309",
+      "role": "react",
+      "id": 2,
+      "approved": true
+    },
+    {
+      "username": "cooldev07",
+      "password": "123456789",
+      "email": "cooldev.400031@gmail.com",
+      "phone": "8898620309",
+      "role": "react",
+      "id": 3,
+      "approved": true
+    },
+    {
+      "username": "srk10",
+      "password": "123456789",
+      "email": "srk07@gmail.com",
+      "phone": "8898620309",
+      "role": "react",
+      "id": 4
+    },
+    {
+      "username": "srk10",
+      "password": "123456987",
+      "email": "a2agmail.com",
+      "phone": "8898620309",
+      "role": "react",
+      "id": 5
+    }
+  ]
+}

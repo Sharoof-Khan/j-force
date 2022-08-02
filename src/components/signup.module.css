@@ -1,0 +1,20 @@
+.container{
+    width:40vw;
+    /* background-color: aqua; */
+    margin: auto
+
+}
+
+.register{
+    height: 40px;
+        width: 100px;
+        margin-left: 205px;
+        display: inline-block;
+        /* margin-top: -300px; */
+        position: relative;
+        margin-top: -50px;
+}
+
+.drpdown{
+    height: 40px;
+}

@@ -1,0 +1,28 @@
+.adminContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 5%;
+    margin-bottom: 50px;
+}
+
+.postCard{
+    width: 20vw;
+    border: 1px dotted gray;
+    padding: 2%;
+    margin-top: 10px;
+    /* gap: 5%; */
+}
+
+.postCard>p{
+    color: gray;
+}
+
+.postCard>button{
+    width: 100px;
+    margin-left: 10px;
+
+}
