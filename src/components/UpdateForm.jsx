@@ -37,7 +37,7 @@ const navigate = useNavigate()
        console.log(addForm)
        const id = localStorage.getItem('currpost')
     //    axios.post(`http://localhost:4000/posts/${id}`, addForm)
-       axios.post(`https://j-force.herokuapp.com/posts/${id}`, addForm)
+       axios.patch(`https://j-force.herokuapp.com/posts/${id}`, addForm)
        
        setAddForm({
            title: '',
@@ -45,8 +45,8 @@ const navigate = useNavigate()
            date: ''
        })
        
-    
        navigate('/posts')
+       localStorage.removeItem('currpost')
         
     }
 

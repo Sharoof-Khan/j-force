@@ -41,14 +41,14 @@ const Login = () => {
             console.log(userName)
             localStorage.setItem('user', JSON.stringify(userName.username))
             // localStorage.setItem('user',(userName.username))
-            // window.location.reload()
+            
             alert(`Welcome ${userName.username}`)
+            navigate('/feed')
         }
         else {
             alert('Invalid Username or Password')
         }
 
-        navigate('/feed')
 
     }
   return (

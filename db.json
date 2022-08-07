@@ -95,8 +95,8 @@
       "email": "gankit07@gmail.com",
       "phone": "8898620309",
       "role": "java",
-      "id": 1,
-      "approved": true
+      "id": 1
+      
     },
     {
       "username": "srk10",
@@ -104,8 +104,8 @@
       "email": "srk10@gmail.com",
       "phone": "8898620309",
       "role": "react",
-      "id": 2,
-      "approved": true
+      "id": 2
+      
     },
     {
       "username": "cooldev07",
@@ -113,8 +113,7 @@
       "email": "cooldev.400031@gmail.com",
       "phone": "8898620309",
       "role": "react",
-      "id": 3,
-      "approved": true
+      "id": 3
     },
     {
       "username": "srk10",

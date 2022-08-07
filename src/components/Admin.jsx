@@ -26,14 +26,14 @@ const Admin = () => {
 
 
   const handleAprove = (id) => {
-    alert(`Post Aprove ${id}`)
-
+    
     // setApruve(true)
-
+    
     // axios.patch(`http://localhost:4000/posts/${id}`, {
-    axios.patch(`https://j-force.herokuapp.com/posts/${id}`, {
-      approved: true
-    })
+      axios.patch(`https://j-force.herokuapp.com/posts/${id}`, {
+        approved: true
+      })
+      alert(`Post Aprove ${id}`)
 
   }
 
@@ -48,6 +48,7 @@ const Admin = () => {
             <p>Description:  {post.description}</p>
             <p>Date:  {post.date}</p>
             <p>Creater:  {post.author ? post.author : 'Guest'}</p>
+            <p>{post.approved?'Approved':'Pending' }</p>
             <button onClick={() => handleDelete(post.id)}>Delete</button>
             {/* <button onClick={() => handleAprove(post.id)  post.approved?isdable()}>Aprove</button> */}
             <button onClick={() => handleAprove(post.id)  } disabled= {post.approved }>Aprove</button>

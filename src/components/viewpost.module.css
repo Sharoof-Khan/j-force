@@ -8,11 +8,19 @@
     flex-wrap: wrap;
     gap: 2%;
     margin-bottom: 5%;
+
+    margin-top: 5%;
+    margin-left: 10vw;
     /* margin:auto; */
+
+    /* overflow: hidden; */
 }
 
 .viewPostContainer>div{
-    height: 50vh;
+    height: 40vh;
+    margin-top: 10px;
+    margin-bottom: 55vh;
+    /* margin-top: 250px; */
 }
 
 .post{
@@ -21,7 +29,7 @@
     margin-top: 5%;
     border: 1px dotted gray;
     padding: 2%;
-    position: relative;
+    /* position: relative; */
 }
 
 
@@ -29,16 +37,15 @@
     color: gray;
 }
 
-.post>:nth-child(4){
+/* .post>:nth-child(4){
     position: absolute;
     top: 85%;
     left: 60%;
     font-size: small;
-    /* bottom: -; */
 
-}
+} */
 
-.post>:nth-child(5){
+/* .post>:nth-child(5){
     position: absolute;
     height: 30px;
     top: 70%;
@@ -50,8 +57,8 @@
     border: none;
     cursor: pointer;
     
-}
-.post>:nth-child(6) {
+} */
+/* .post>:nth-child(6) {
     position:absolute;
     height: 30px;
     margin-left: 150px;
@@ -61,7 +68,7 @@
         border: none;  
         cursor: pointer; 
 
-}
+} */
 
 .approved{
     font-size: 0.5rem;

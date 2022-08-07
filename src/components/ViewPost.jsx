@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Style from './viewpost.module.css'
 import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
+import Card from './Cards'
+import Navbar from './Sidebar'
+import Sidebar from './SideMenu'
 
 const ViewPost = () => {
     const [posts, setPosts] = useState([])
@@ -10,7 +13,7 @@ const curruser = JSON.parse(localStorage.getItem('user'))
 
     useEffect(() => {
         // axios.get(`http://localhost:4000/posts`)
-        axios.get(`https://j-force.herokuapp.com//posts`)
+        axios.get(`https://j-force.herokuapp.com/posts`)
             .then(res => {
 
                 const post = [];
@@ -42,27 +45,46 @@ const curruser = JSON.parse(localStorage.getItem('user'))
 
     const handleEdit = (id) => {
         localStorage.setItem('currpost', id)
-        alert(id,'id')
+        // alert(id,'id')
         navigate(`/updatepost`)
 
     }
 
   return (
       <div>
-          <h1 style={{textAlign:'center'}}>Your Feeds</h1>
+          {/* <Navbar /> */}
+          <Sidebar/>
+          {/* <h1 style={{textAlign:'center'}}>Your Feeds</h1> */}
           <div className={Style.viewPostContainer}>
               
               {
                 posts &&  posts.map(post => {
                       return (
-                          <div className={Style.post} key ={post.id}>
-                              <h3>{post.title}</h3>
-                              <p>Description:  {post.description}</p>
-                              <p>Date:  { post.date}</p>
-                              <p> Creater:  {post.author ? post.author : 'Guest'}</p>
-                              <button onClick={() => handleDelete(post.id)}>Delete</button>
-                              <button onClick={() =>handleEdit(post.id)}>Update</button>
-                          </div>
+                        //   <div className={Style.post} key ={post.id}>
+                        //       <h3>{post.title}</h3>
+                        //       <p>Description:  {post.description}</p>
+                        //       <p>Date:  { post.date}</p>
+                        //       <p> Creater:  {post.author ? post.author : 'Guest'}</p>
+                        //       <button onClick={() => handleDelete(post.id)}>Delete</button>
+                        //       <button onClick={() =>handleEdit(post.id)}>Update</button>
+                        //   </div>
+                          
+                          <div>
+                              
+                          
+                          <Card
+                              title={post.title}
+                              description={post.description}
+                              date={post.date}
+                              author={post.author}
+                              approved={post.approved}
+                              id={post.id}
+                              handleDelete={handleDelete}
+                              handleEdit={handleEdit}
+                              
+                              />
+                              
+                              </div>
 
                       )
                   }

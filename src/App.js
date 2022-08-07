@@ -8,6 +8,8 @@ import ViewPost from './components/ViewPost';
 import UpdatePost from './components/UpdateForm';
 import Admin from './components/Admin';
 import OtherUserPosts from './components/OtherUser';
+import Navbar from './components/Sidebar';
+import Sidebar from './components/SideMenu';
 
 function App() {
   return (
@@ -15,8 +17,8 @@ function App() {
       {/* <h1>J-Force</h1> */}
       {/* <Login /> */}
 {/* <FeedPage /> */}
-      <Routes>
         {/* <Route path="/" element={<SignUp />} />    */}
+      <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<SignUp />} />
@@ -28,6 +30,9 @@ function App() {
         <Route path = "/admin" element = {<Admin/>} />
         
     </Routes>
+      
+      {/* <Navbar/> */}
+      {/* <Sidebar/> */}
 
     </div>
   );
